@@ -5,19 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Barbosa Dev</title>
+  <script src="script.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
-  <header>
-    <div class="nav">
-      <h2 class="logo">Barbosa<span>.dev</span></h2>
-      <ul class="menu">
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </div>
-  </header>
+ <header>
+  <div class="nav">
+    <h2 class="logo">Barbosa<span>.dev</span></h2>
+    <button class="menu-btn">☰</button>
+    <ul class="menu">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </div>
+</header>
 
   <!-- INÍCIO -->
   <section class="hero" id="inicio">
@@ -45,27 +48,36 @@
     </div>
   </section>
 
-  <!-- CONTATO -->
-  <section class="contato" id="contato">
-    <h2>Vamos conversar?</h2>
-    <p>Me manda uma mensagem e eu respondo rápido.</p>
-    <div class="contato-box">
-      <div class="input-group">
-        <input type="text" placeholder="Seu nome">
+ <!-- CONTATO -->
+<section class="contato" id="contato">
+  <h2>Vamos conversar?</h2>
+  <p>Me manda uma mensagem e eu respondo rápido.</p>
+  <div class="contato-box">
+
+    <div class="input-group">
+      <label>👤 Seu nome</label>
+      <div class="input-wrapper">
+        <i class='bx bxs-user'></i>
+        <input type="text" placeholder="Ex: João Silva">
       </div>
-      <div class="input-group">
-        <input type="email" placeholder="Seu e-mail">
-      </div>
-      <div class="input-group">
-        <textarea placeholder="Sua mensagem" rows="5"></textarea>
-      </div>
-      <button class="btn">Enviar mensagem</button>
     </div>
-  </section>
 
-  <footer>
-    <p>Feito por <span>Barbosa.dev</span> © 2025</p>
-  </footer>
+    <div class="input-group">
+      <label>📧 Seu e-mail</label>
+      <div class="input-wrapper">
+        <i class='bx bxs-envelope'></i>
+        <input type="email" placeholder="Ex: joao@email.com">
+      </div>
+    </div>
 
-</body>
-</html>
+    <div class="input-group">
+      <label>💬 Sua mensagem</label>
+      <div class="input-wrapper textarea-wrapper">
+        <i class='bx bxs-message-rounded'></i>
+        <textarea placeholder="Conte o que você precisa..." rows="5"></textarea>
+      </div>
+    </div>
+
+    <button class="btn-enviar">Enviar mensagem 🚀</button>
+  </div>
+</section>
