@@ -1,44 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-bt">
-
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="styles.css">
-    <title>Dev Login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Barbosa Dev</title>
 </head>
-
 <body>
-    <main class="container">
-        <form>
-            <h1>Login</h1>
-            <div class="input-box">
-                <input placeholder="Email or phone" type="email">
-                <i class="bx bxs-user"></i>
-            </div>
-            <div class="input-box">
-                <input placeholder="Password" type="password">
-                <i class="bx bxs-lock-alt"></i>
-            </div>
 
-            <div class="remember-forgot">
-                <label>
-                    <input type="checkbox">
-                    Remember me
-                </label>
-                <a href="#">Forgot password</a>
-            </div>
+  <header>
+    <div class="nav">
+      <h2 class="logo">Barbosa<span>.dev</span></h2>
+      <ul class="menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </header>
 
-            <button type="submit" class="login">Login</button>
+  <!-- INÍCIO -->
+  <section class="hero" id="inicio">
+    <h1>Sites que vendem.<br>Automações que economizam.</h1>
+    <p>Desenvolvimento web e automações para pequenos negócios.</p>
+    <a href="#contato" class="btn">Fale comigo</a>
+  </section>
 
-            <div class="register-link">
-                <p>Don't have an account? <a href="#">Register</a></p>
-            </div>
-        </form>
+  <!-- SERVIÇOS -->
+  <section class="servicos" id="servicos">
+    <h2>O que eu faço</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>🌐 Sites</h3>
+        <p>Landing pages rápidas e modernas para o seu negócio aparecer no Google.</p>
+      </div>
+      <div class="card">
+        <h3>⚙️ Automações</h3>
+        <p>Bots e scripts que economizam horas do seu dia automatizando tarefas.</p>
+      </div>
+      <div class="card">
+        <h3>📱 Responsivo</h3>
+        <p>Tudo que desenvolvo funciona perfeitamente no celular e no computador.</p>
+      </div>
+    </div>
+  </section>
 
-    </main>
+  <!-- CONTATO -->
+  <section class="contato" id="contato">
+    <h2>Vamos conversar?</h2>
+    <p>Me manda uma mensagem e eu respondo rápido.</p>
+    <div class="contato-box">
+      <div class="input-group">
+        <input type="text" placeholder="Seu nome">
+      </div>
+      <div class="input-group">
+        <input type="email" placeholder="Seu e-mail">
+      </div>
+      <div class="input-group">
+        <textarea placeholder="Sua mensagem" rows="5"></textarea>
+      </div>
+      <button class="btn">Enviar mensagem</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>Feito por <span>Barbosa.dev</span> © 2025</p>
+  </footer>
 
 </body>
-
 </html>
